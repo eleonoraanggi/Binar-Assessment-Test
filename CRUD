@@ -1,0 +1,4 @@
+Public sub SimpanData()
+  strSQL = "INSERT INTO DataOjek (idOjek, nama_driver, ktp, alamat_driver, telpon) VALUES ('" & Text1.Text & "','" & Text2.Text & "','" & Text3.Text & "','" & Text4.Text & "','" & Text5.Text & "')";
+  koneksi.Execute strSQL, , adCmdText
+End Sub
